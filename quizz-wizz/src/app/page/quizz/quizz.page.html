@@ -1,0 +1,157 @@
+<ion-header>
+  <ion-toolbar color="warning"> 
+    <ion-title>
+    music-quizz!
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="background-image">
+  <img src="/assets/musicquiz.jpg">
+ 
+    <ion-list>
+        <ion-radio-group *ngIf="result1" [(ngModel)]="Q1">
+          <ion-list-header>
+            <ion-label>Only thing of a note that can vary, is
+
+            </ion-label>
+          </ion-list-header>
+      
+          <ion-item>
+            <ion-label>amplitude</ion-label>
+            <ion-radio slot="start" value="amplitude" checked></ion-radio>
+          </ion-item>
+      
+          <ion-item>
+            <ion-label>length</ion-label>
+            <ion-radio slot="start" value="length"></ion-radio>
+          </ion-item>
+      
+          <ion-item>
+            <ion-label>wave</ion-label>
+            <ion-radio slot="start" value="wave"></ion-radio>
+          </ion-item>
+
+          <ion-item>
+              <ion-label>type</ion-label>
+              <ion-radio slot="start" value="type"></ion-radio>
+            </ion-item>
+          <ion-button shape="round" color="warning" (click)="next()">next</ion-button>
+        
+        </ion-radio-group>
+      </ion-list> 
+
+ <ion-list>
+            <ion-radio-group *ngIf="result2" [(ngModel)]="Q2">
+              <ion-list-header>
+                <ion-label>Mixture of high and low sounds is called a</ion-label>
+              </ion-list-header>
+          
+              <ion-item>
+                <ion-label>rhythm</ion-label>
+                <ion-radio slot="start" value="rhythm" checked></ion-radio>
+              </ion-item>
+          
+              <ion-item>
+                <ion-label>bass effect</ion-label>
+                <ion-radio slot="start" value="bass effect"></ion-radio>
+              </ion-item>
+          
+              <ion-item>
+                <ion-label>beat effect</ion-label>
+                <ion-radio slot="start" value="beat effect"></ion-radio>
+              </ion-item>
+    
+              <ion-item>
+                  <ion-label>wow effect</ion-label>
+                  <ion-radio slot="start" value="wow effect"></ion-radio>
+                </ion-item>
+                <ion-button shape="round" color="warning" (click)="next1()">next1</ion-button>
+            </ion-radio-group>
+
+            <ion-radio-group *ngIf="result3" [(ngModel)]="Q3">
+              <ion-list-header>
+                <ion-label>Sequence of notes is known as</ion-label>
+              </ion-list-header>
+          
+              <ion-item>
+                <ion-label>plain</ion-label>
+                <ion-radio slot="start" value="plain" checked></ion-radio>
+              </ion-item>
+          
+              <ion-item>
+                <ion-label>scale</ion-label>
+                <ion-radio slot="start" value="scale"></ion-radio>
+              </ion-item>
+          
+              <ion-item>
+                <ion-label>balance</ion-label>
+                <ion-radio slot="start" value="balance"></ion-radio>
+              </ion-item>
+    
+              <ion-item>
+                  <ion-label>proportion</ion-label>
+                  <ion-radio slot="start" value="proportion"></ion-radio>
+                </ion-item>
+                <ion-button shape="round" color="warning" (click)="next2()">next2</ion-button>
+            </ion-radio-group>
+
+            <ion-radio-group *ngIf="result4" [(ngModel)]="Q4">
+              <ion-list-header>
+                <ion-label>Musical sounds are organized into</ion-label>
+              </ion-list-header>
+          
+              <ion-item>
+                <ion-label>notes</ion-label>
+                <ion-radio slot="start" value="notes" checked></ion-radio>
+              </ion-item>
+          
+              <ion-item>
+                <ion-label>pitch</ion-label>
+                <ion-radio slot="start" value="pitch"></ion-radio>
+              </ion-item>
+          
+              <ion-item>
+                <ion-label>wave fronts</ion-label>
+                <ion-radio slot="start" value="wave fronts"></ion-radio>
+              </ion-item>
+    
+              <ion-item>
+                  <ion-label>phases</ion-label>
+                  <ion-radio slot="start" value="phases"></ion-radio>
+                </ion-item>
+                <ion-button shape="round" color="warning" (click)="next3()">next3</ion-button>
+            </ion-radio-group>
+
+            <ion-radio-group *ngIf="result5" [(ngModel)]="Q5">
+              <ion-list-header>
+                <ion-label>Pleasant sound of music depends on its</ion-label>
+              </ion-list-header>
+          
+              <ion-item>
+                <ion-label>amplitude</ion-label>
+                <ion-radio slot="start" value="amplitude" checked></ion-radio>
+              </ion-item>
+          
+              <ion-item>
+                <ion-label>frequency</ion-label>
+                <ion-radio slot="start" value="frequency"></ion-radio>
+              </ion-item>
+          
+              <ion-item>
+                <ion-label>wavelength</ion-label>
+                <ion-radio slot="start" value="wavelength"></ion-radio>
+              </ion-item>
+    
+              <ion-item>
+                  <ion-label>volume</ion-label>
+                  <ion-radio slot="start" value="volume"></ion-radio>
+                </ion-item>
+                <ion-button shape="round"   color="warning" (click)="next4()">next4</ion-button>
+            </ion-radio-group>
+
+          
+           
+          </ion-list> 
+          <!-- <ion-button type="submit" color="warning" value="submit" (click)="submit()">submit </ion-button> -->
+           <ion-button type="pass" expand="block"  color="warning" value="pass" (click)="pass()" >Pass </ion-button>

@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>results</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="background-image">
+    <ion-card class="result">
+
+      <h1>final score</h1>
+<h6><b>music-quizz!</b></h6> <br><br>
+Q1={{Q1}}&nbsp;&nbsp;{{negQ1}}<br><br>
+Q2={{Q2}}&nbsp;&nbsp;{{negQ2}}<br><br>
+Q3={{Q3}}&nbsp;&nbsp;{{negQ3}}<br><br>
+Q4={{Q4}}&nbsp;&nbsp;{{negQ4}}<br><br>
+Q5={{Q5}}&nbsp;&nbsp;{{negQ5}}<br><br>
+
+<h6><b>food quizz! results</b></h6><br><br>
+Q1={{Q6}}&nbsp;&nbsp;{{negQ6}}<br><br>
+Q2={{Q7}}&nbsp;&nbsp;{{negQ7}}<br><br>
+Q3={{Q8}}&nbsp;&nbsp;{{negQ8}}<br><br>
+Q4={{Q9}}&nbsp;&nbsp;{{negQ9}}<br><br>
+Q5={{Q10}}&nbsp;&nbsp;{{negQ10}}<br><br>
+
+<h6><b>Nature-quizz results!</b></h6><br><br>
+Q1={{Q11}}&nbsp;&nbsp;{{negQ11}}<br><br>
+Q2={{Q12}}&nbsp;&nbsp;{{negQ12}}<br><br>
+Q3={{Q13}}&nbsp;&nbsp;{{negQ13}}<br><br>
+Q4={{Q14}}&nbsp;&nbsp;{{negQ14}}<br><br>
+Q5={{Q15}}&nbsp;&nbsp;{{negQ15}}<br><br>
+
+<h6><b>sport-quizz results!</b></h6><br><br>
+Q1={{Q16}}&nbsp;&nbsp;{{negQ16}}<br><br>
+Q2={{Q17}}&nbsp;&nbsp;{{negQ17}}<br><br>
+Q3={{Q18}}&nbsp;&nbsp;{{negQ18}}<br><br>
+Q4={{Q19}}&nbsp;&nbsp;{{negQ19}}<br><br>
+<!-- Q5={{Q20}}&nbsp;&nbsp;{{negQ20}}<br><br> -->
+
+<br><br>
+
+<ion-button color="primary" expand="round" (click)=show() onclick="this.disabled=true">final score</ion-button>
+<br>
+{{total}}/20
+{{status}}
+<br>
+<ion-button color="primary" expand="block" (click)=done() >Done!</ion-button>
+</ion-card>
+</ion-content>
+

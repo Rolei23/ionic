@@ -1,44 +1,151 @@
 <ion-header>
-  <ion-toolbar color="warning">
-    <ion-title>
-     Court Counter
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+    <ion-toolbar color="warning">
+      <ion-title text-align="left">
+       Court Counter
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content> 
 
-<ion-content>
-  <div class="ion-padding">
-      <table style="width:10%">
-    
+   <!-- <table>  
+      
+      <tr>
+    <th>        
+   <ion-label>Team A</ion-label>
+   <ion-label><h1>{{TA}}</h1></ion-label>
+</th>
+        </tr>
+        
           <tr>
-              <th><label>Team A </label>
-              <br><br><br>
-           
-
-        
-                <ion-button color="warning">-4</ion-button>
-                <br>
-                <ion-button color="warning">-3</ion-button>
-                <br>
-                <ion-button color="warning">-2</ion-button>
-                <br>
-                <ion-button color="warning">-1</ion-button>
-              
+            <td>
              
-        
-         </th>
-            
-            </tr>     
-            <br><br>
-            <tr>
-               
-          
+            <ion-row>
+              <ion-button color="warning"(click)="press1()">-4</ion-button>
+              <ion-button color="warning"(click)="press2()">4</ion-button>
+              </ion-row>
+            <ion-row>
+              <ion-button color="warning"(click)="press3()">-3</ion-button>
+              <ion-button color="warning"(click)="press4()">3</ion-button>
+            </ion-row>
+            <ion-row>
+              <ion-button color="warning"(click)="press5()">-2</ion-button>
+              <ion-button color="warning"(click)="press6()">2</ion-button>
+            </ion-row>
+            <ion-row>
+                <ion-button color="warning"(click)="press7()">-1</ion-button>
+              <ion-button color="warning"(click)="press8()">1</ion-button>
+                          </ion-row>
+                      
+      
+              </td>
               
-              
-              </tr>
-  </table>
-  </div>
-  
- 
-  
+              <td>
+
+                  <tr>
+                      <th>     
+                     <ion-label>Team B</ion-label>
+                     <ion-label><h1>{{TB}}</h1></ion-label>
+                  </th>
+                          </tr>
+                <ion-grid>
+            <ion-row>
+                <ion-button color="warning"(click)="press9()">-4</ion-button>
+                <ion-button color="warning"(click)="press10()">4</ion-button>
+                </ion-row>
+            <ion-row>
+                <ion-button color="warning"(click)="press11()">-3</ion-button>
+                <ion-button color="warning"(click)="press12()">3</ion-button>
+            </ion-row>
+            <ion-row>
+                 <ion-button color="warning"(click)="press13()">-2</ion-button>
+                 <ion-button color="warning"(click)="press14()">2</ion-button>
+           </ion-row>
+           <ion-row>
+                  <ion-button color="warning"(click)="press15()">-1</ion-button>
+                  <ion-button color="warning"(click)="press16()">1</ion-button>
+            </ion-row>
+          </ion-grid>
+              </td>
+    </tr>
+    <div class="footer">
+        <ion-button color="warning" (click)="reset()">RESET</ion-button>
+        </div>
+   </table>
+
+</ion-content> --><table>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <tr>
+     
+    <th>
+
+  <ion-label>Team A</ion-label>
+  <ion-label><h1>{{TA}}</h1></ion-label>
+  <tr>
+      <th>
+<ion-button color="warning" (click)="press1()">-4</ion-button>
+<ion-button color="warning" (click)="press2()">+4</ion-button>
+</th>
+</tr>
+<tr>
+    <th>
+<ion-button color="warning" (click)="press3()">-3</ion-button>
+<ion-button color="warning" (click)="press4()">+3</ion-button>
+</th>
+</tr>
+<tr>
+    <th>
+<ion-button color="warning" (click)="press5()">-2</ion-button>
+<ion-button color="warning" (click)="press6()">+2</ion-button>
+</th>
+</tr>
+<tr>
+  <th>
+
+<ion-button color="warning" (click)="press7()">-1</ion-button>
+<ion-button color="warning" (click)="press8()">+1</ion-button>
+</th>
+</tr>
+
+</th>
+<div class="vl"></div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<th>
+
+  <ion-label>Team B</ion-label>
+  <ion-label><h1>{{TB}}</h1></ion-label>
+  <tr>
+      <th>
+<ion-button color="warning" (click)="press9()">-4</ion-button>
+<ion-button color="warning" (click)="press10()">+4</ion-button>
+</th>
+</tr>
+<tr>
+    <th>
+
+<ion-button color="warning" (click)="press11()">-3</ion-button>
+<ion-button color="warning" (click)="press12()">+3</ion-button>
+</th>
+</tr>
+<tr>
+    <th>
+<ion-button color="warning" (click)="press13()">-2</ion-button>
+<ion-button color="warning" (click)="press14()">+2</ion-button>
+</th>
+</tr>
+<tr>
+  <th>
+
+<ion-button color="warning" (click)="press15()">-1</ion-button>
+<ion-button color="warning" (click)="press16()">+1</ion-button>
+</th>
+</tr>
+</th>
+</tr>
+</table>
+<div class="footer">
+<ion-button color="warning" (click)="reset()">RESET</ion-button>
+</div>
 </ion-content>

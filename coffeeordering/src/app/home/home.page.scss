@@ -1,0 +1,20 @@
+
+ .background-image{
+    --background: url("../page/background.jpg") 
+     0 0/100% 100% no-repeat;
+     
+     text-align:center;
+   }
+   ion-card{
+       text-align:center;
+      
+   }
+   h3{
+      text-align: center;
+   }
+   h1 b{
+      font-size: 2.6rem;
+      -webkit-text-fill-color: black;
+      -webkit-text-stroke-width: 1.2px;
+      -webkit-text-stroke-color:whitesmoke;
+    }

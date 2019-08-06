@@ -1,0 +1,33 @@
+
+
+ .background-image{
+    --background: url("../page/results/front.jpg") 
+     0 0/100% 100% no-repeat;
+     margin-left: auto;
+     margin-right: auto;
+     justify-content: center;
+}
+// .center{
+//    margin-left: auto;
+//    margin-right: auto;
+// }
+h1
+{
+   text-align: right;
+   color: black;
+}
+h3 {
+   color: black;
+}
+p{
+   color: black;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:purple;
+   color: white;
+   text-align: center;
+ }

@@ -1,0 +1,65 @@
+ <ion-header>
+  <ion-toolbar color="secondary">
+    <ion-title><i>coffee menu</i></ion-title>
+  </ion-toolbar>
+</ion-header> 
+
+<ion-content class="background-image">
+    <ion-list-header>
+    
+        <img src="/assets/ESPRESSO.jpg" >
+       
+     
+      </ion-list-header>
+  
+        <ion-item>ESPRESSO</ion-item>
+      <ion-item>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     
+      <ion-button color="secondary" (click)="minus()"> - </ion-button>
+      <h1>{{num}}</h1>
+      <ion-button color="secondary" (click)="add()"> + </ion-button>
+  <ion-button color="secondary"size="medium" (click)="click()">place order?</ion-button>
+      </ion-item>
+<ion-item> <h3> R {{prESPRESSO}}.00</h3> 
+</ion-item>
+   <ion-list-header>
+          <img src="/assets/AMERICAN COFFEE.jpg">
+          
+        </ion-list-header>
+        <ion-item>AMERICAN0</ion-item>
+        <ion-item>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     
+      <ion-button color="secondary" (click)="minus1()"> - </ion-button>
+      <h1>{{amount}}</h1>
+      <ion-button color="secondary" (click)="add1()"> + </ion-button>
+      <ion-button color="secondary"size="medium" (click)="click1()">place order?</ion-button>
+      </ion-item>
+<ion-item> <h3> R {{prAMERICANO}}.00</h3> 
+</ion-item>
+    
+      
+       
+      <ion-list-header>
+            <img src="/assets/MACCHIATO.jpg">
+            
+          </ion-list-header> 
+      
+          <ion-item>MACCHIATO</ion-item>
+          <ion-item>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       
+        <ion-button color="secondary" (click)="minus2()"> - </ion-button>
+        <h1>{{number}}</h1>
+        <ion-button color="secondary" (click)="add2()"> + </ion-button>
+        <ion-button color="secondary"size="medium" (click)="click2()">place order?</ion-button>
+          </ion-item>
+  <ion-item> <h3> R {{prMACCHIATO}}.00</h3> </ion-item>
+        
+
+</ion-content>
+ 

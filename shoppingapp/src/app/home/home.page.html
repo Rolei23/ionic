@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+shopping app
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item *ngFor="let grocery of grocerylist | async">
+    {{grocery.name}}{{grocery.price}}{{grocery.type}}
+  </ion-item>
+</ion-content>

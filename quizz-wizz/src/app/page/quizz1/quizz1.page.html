@@ -1,0 +1,158 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title>Food-Quizz!</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <img src="/assets/images (1).jpg">
+  <ion-list>
+    <ion-radio-group *ngIf="result1" [(ngModel)]="Q6">
+      <ion-list-header>
+        <ion-label> All over South Africa I found shops dedicated to selling biltong and droewors.
+            What are they? 
+        </ion-label>
+      </ion-list-header>
+  
+      <ion-item>
+        <ion-label>  Types of spiced unleavened bread</ion-label>
+        <ion-radio slot="start" value="Types of spiced unleavened bread" checked></ion-radio>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label> Diced crocodile</ion-label>
+        <ion-radio slot="start" value="Diced crocodile"></ion-radio>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>Spicy chicken wings and thighs</ion-label>
+        <ion-radio slot="start" value="Spicy chicken wings and thighs"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+          <ion-label>Spiced dried meat and dried sausage</ion-label>
+          <ion-radio slot="start" value="Spiced dried meat and dried sausage"></ion-radio>
+        </ion-item>
+      <ion-button shape="round" color="dark" (click)="next()">next</ion-button>
+    
+    </ion-radio-group>
+  </ion-list> 
+
+<ion-list>
+        <ion-radio-group *ngIf="result2" [(ngModel)]="Q7">
+          <ion-list-header>
+            <ion-label>Another favourite snack in South Africa are savoury pies. Which one of these is not common in South Africa?</ion-label>
+          </ion-list-header>
+      
+          <ion-item>
+            <ion-label> All of these are common</ion-label>
+            <ion-radio slot="start" value="All of these are common" checked></ion-radio>
+          </ion-item>
+      
+          <ion-item>
+            <ion-label> Mutton curry pie</ion-label>
+            <ion-radio slot="start" value="Mutton curry pie"></ion-radio>
+          </ion-item>
+      
+          <ion-item>
+            <ion-label>Cornish Pasty</ion-label>
+            <ion-radio slot="start" value="Cornish Pasty"></ion-radio>
+          </ion-item>
+
+          <ion-item>
+              <ion-label> Chicken Peri Peri</ion-label>
+              <ion-radio slot="start" value="Chicken Peri Peri"></ion-radio>
+            </ion-item>
+            <ion-button shape="round" color="dark" (click)="next1()">next1</ion-button>
+        </ion-radio-group>
+
+        <ion-radio-group *ngIf="result3" [(ngModel)]="Q8">
+          <ion-list-header>
+            <ion-label>I enjoyed many a scrumptious braai during my stay in South Africa. What is a braai?</ion-label>
+            <ion-radio slot="start" value="I enjoyed many a scrumptious braai during my stay in South Africa. What is a braai?" checked></ion-radio>
+          </ion-list-header>
+      
+          <ion-item>
+            <ion-label>Zulu home-made beer</ion-label>
+            <ion-radio slot="start" value="Zulu home-made beer" checked></ion-radio>
+          </ion-item>
+      
+          <ion-item>
+            <ion-label> Barbecue</ion-label>
+            <ion-radio slot="start" value="Barbecue"></ion-radio>
+          </ion-item>
+      
+          <ion-item>
+            <ion-label>Ladies underwear garment</ion-label>
+            <ion-radio slot="start" value="Ladies underwear garment"></ion-radio>
+          </ion-item>
+
+          <ion-item>
+              <ion-label>Sweet liqueur</ion-label>
+              <ion-radio slot="start" value="Sweet liqueur"></ion-radio>
+            </ion-item>
+            <ion-button shape="round" color="dark" (click)="next2()">next2</ion-button>
+        </ion-radio-group>
+
+        <ion-radio-group *ngIf="result4" [(ngModel)]="Q9">
+          <ion-list-header>
+            <ion-label>Great! Most places offered the traditional British breakfast fry up (eggs, bacon, sausage, etc.) What did most places include which is NOT the norm for breakfast in the U.K.?</ion-label>
+          </ion-list-header>
+      
+          <ion-item>
+            <ion-label> Coconut</ion-label>
+            <ion-radio slot="start" value="Coconut" checked></ion-radio>
+          </ion-item>
+      
+          <ion-item>
+            <ion-label>Apples</ion-label>
+            <ion-radio slot="start" value="Apples"></ion-radio>
+          </ion-item>
+      
+          <ion-item>
+            <ion-label> Chillies</ion-label>
+            <ion-radio slot="start" value=" Chillies"></ion-radio>
+          </ion-item>
+
+          <ion-item>
+              <ion-label>Chips (French fries)</ion-label>
+              <ion-radio slot="start" value="Chips (French fries)"></ion-radio>
+            </ion-item>
+            <ion-button shape="round" color="dark" (click)="next3()">next3</ion-button>
+        </ion-radio-group>
+
+        <ion-radio-group *ngIf="result5" [(ngModel)]="Q10">
+          <ion-list-header>
+            <ion-label>The "Cape Malay" style of cooking was greatly influenced by who?</ion-label>
+          </ion-list-header>
+      
+          <ion-item>
+            <ion-label> British colonists</ion-label>
+            <ion-radio slot="start" value="kruger National Park" checked></ion-radio>
+          </ion-item>
+      
+          <ion-item>
+            <ion-label>German housewives</ion-label>
+            <ion-radio slot="start" value="British colonists"></ion-radio>
+          </ion-item>
+      
+          <ion-item>
+            <ion-label> French colonists</ion-label>
+            <ion-radio slot="start" value=" French colonists"></ion-radio>
+          </ion-item>
+
+          <ion-item>
+              <ion-label>Slaves brought to the Cape by the Dutch East India Company</ion-label>
+              <ion-radio slot="start" value="Slaves brought to the Cape by the Dutch East India Company"></ion-radio>
+            </ion-item>
+            <ion-button shape="round" color="dark" (click)="next4()">next4</ion-button>
+        </ion-radio-group>
+
+      
+       
+      </ion-list> 
+      <!-- <ion-button type="submit" color="dark" value="submit" (click)="submit()">submit </ion-button> -->
+      <ion-button type="pass" color="dark" expand="block" value="pass" (click)="pass()" >Pass </ion-button>
+</ion-content>
+
+

@@ -1,0 +1,149 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-title>nature-quizz!</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <img src="/assets/world-quizz.jpg">
+    <ion-list>
+        <ion-radio-group *ngIf="result1" [(ngModel)]="Q1">
+          <ion-list-header>
+            <ion-label>Do you know what Soweto stands for? 
+            </ion-label>
+          </ion-list-header>
+      
+          <ion-item>
+            <ion-label> Soggy Western Town</ion-label>
+            <ion-radio slot="start" value="Soggy Western Town" checked></ion-radio>
+          </ion-item>
+      
+          <ion-item>
+            <ion-label> South African Western Town</ion-label>
+            <ion-radio slot="start" value="South African Western Town"></ion-radio>
+          </ion-item>
+      
+          <ion-item>
+            <ion-label> South Western Township</ion-label>
+            <ion-radio slot="start" value="South Western Township "></ion-radio>
+          </ion-item>
+          <ion-button shape="round" color="success" (click)="next()">next</ion-button>
+        
+        </ion-radio-group>
+      </ion-list> 
+
+ <ion-list>
+            <ion-radio-group *ngIf="result2" [(ngModel)]="Q2">
+              <ion-list-header>
+                <ion-label>This game park is the largest in South Africa. What is it?</ion-label>
+              </ion-list-header>
+          
+              <ion-item>
+                <ion-label>kruger National Park</ion-label>
+                <ion-radio slot="start" value="kruger National Park" checked></ion-radio>
+              </ion-item>
+          
+              <ion-item>
+                <ion-label>Madikwe game Reserve</ion-label>
+                <ion-radio slot="start" value="Madikwe game Reserve"></ion-radio>
+              </ion-item>
+          
+              <ion-item>
+                <ion-label>Pilanesburg Game Reserve</ion-label>
+                <ion-radio slot="start" value="Pilanesburg Game Reserve"></ion-radio>
+              </ion-item>
+    
+              <ion-item>
+                  <ion-label>Kgalagadi Transfrontier park</ion-label>
+                  <ion-radio slot="start" value="Kgalagadi Transfrontier park"></ion-radio>
+                </ion-item>
+                <ion-button shape="round" color="success" (click)="next1()">next1</ion-button>
+            </ion-radio-group>
+
+            <ion-radio-group *ngIf="result3" [(ngModel)]="Q3">
+              <ion-list-header>
+                <ion-label>Nelson Mandela spent 18 years imprisoned on this infamous island.</ion-label>
+              </ion-list-header>
+          
+              <ion-item>
+                <ion-label>Marion Island</ion-label>
+                <ion-radio slot="start" value="kruger National Park" checked></ion-radio>
+              </ion-item>
+          
+              <ion-item>
+                <ion-label>Robben Island</ion-label>
+                <ion-radio slot="start" value="Madikwe game Reserve"></ion-radio>
+              </ion-item>
+          
+              <ion-item>
+                <ion-label>Msikaba Island</ion-label>
+                <ion-radio slot="start" value="Pilanesburg Game Reserve"></ion-radio>
+              </ion-item>
+    
+              <ion-item>
+                  <ion-label>Easter Island</ion-label>
+                  <ion-radio slot="start" value="Kgalagadi Transfrontier park"></ion-radio>
+                </ion-item>
+                <ion-button shape="round" color="success" (click)="next2()">next2</ion-button>
+            </ion-radio-group>
+
+            <ion-radio-group *ngIf="result4" [(ngModel)]="Q4">
+              <ion-list-header>
+                <ion-label>What animal is Boulders Beach famous for having?</ion-label>
+              </ion-list-header>
+          
+              <ion-item>
+                <ion-label>Elephant</ion-label>
+                <ion-radio slot="start" value="kruger National Park" checked></ion-radio>
+              </ion-item>
+          
+              <ion-item>
+                <ion-label>Penguin</ion-label>
+                <ion-radio slot="start" value="Madikwe game Reserve"></ion-radio>
+              </ion-item>
+          
+              <ion-item>
+                <ion-label>leopard</ion-label>
+                <ion-radio slot="start" value="Pilanesburg Game Reserve"></ion-radio>
+              </ion-item>
+    
+              <ion-item>
+                  <ion-label>ostrich</ion-label>
+                  <ion-radio slot="start" value="Kgalagadi Transfrontier park"></ion-radio>
+                </ion-item>
+                <ion-button shape="round" color="success" (click)="next3()">next3</ion-button>
+            </ion-radio-group>
+
+            <ion-radio-group *ngIf="result5" [(ngModel)]="Q5">
+              <ion-list-header>
+                <ion-label>Johannesburg's population boomed after what was found there?</ion-label>
+              </ion-list-header>
+          
+              <ion-item>
+                <ion-label>uranium</ion-label>
+                <ion-radio slot="start" value="kruger National Park" checked></ion-radio>
+              </ion-item>
+          
+              <ion-item>
+                <ion-label>oil</ion-label>
+                <ion-radio slot="start" value="Madikwe game Reserve"></ion-radio>
+              </ion-item>
+          
+              <ion-item>
+                <ion-label>cocoa beans</ion-label>
+                <ion-radio slot="start" value="Pilanesburg Game Reserve"></ion-radio>
+              </ion-item>
+    
+              <ion-item>
+                  <ion-label>gold</ion-label>
+                  <ion-radio slot="start" value="Kgalagadi Transfrontier park"></ion-radio>
+                </ion-item>
+                <ion-button shape="round" color="success" (click)="next4()">next4</ion-button>
+            </ion-radio-group>
+
+          
+           
+          </ion-list> 
+          <!-- <ion-button type="submit" value="submit" color="success" (click)="submit()">submit </ion-button> -->
+          <ion-button type="pass" value="pass" expand="block" color="success"(click)="pass()" >Pass </ion-button>
+</ion-content>

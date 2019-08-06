@@ -1,0 +1,143 @@
+<ion-header>
+      <ion-toolbar color="secondary">
+    <ion-title>sport-quizz</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <img src="/assets/sport-quizz.jpg">
+<ion-list>
+        <ion-radio-group *ngIf="result1" [(ngModel)]="Q1">
+          <ion-list-header>
+            <ion-label>Boxing matches are held in a boxing 
+            </ion-label>
+          </ion-list-header>
+      
+          <ion-item>
+            <ion-label> square</ion-label>
+            <ion-radio slot="start" value=" square" checked></ion-radio>
+          </ion-item>
+      
+          <ion-item>
+            <ion-label> ring</ion-label>
+            <ion-radio slot="start" value=" ring"></ion-radio>
+          </ion-item>
+      
+          <ion-item>
+            <ion-label>court</ion-label>
+            <ion-radio slot="start" value="court"></ion-radio>
+          </ion-item>
+          <ion-button shape="round" color="secondary" (click)="next()">next</ion-button>
+        
+        </ion-radio-group>
+      </ion-list> 
+
+ <ion-list>
+            <ion-radio-group *ngIf="result2" [(ngModel)]="Q2">
+              <ion-list-header>
+                <ion-label>The multiple Olympic-medal winning runner Usain Bolt was born in</ion-label>
+              </ion-list-header>
+          
+              <ion-item>
+                <ion-label> England</ion-label>
+                <ion-radio slot="start" value=" England" checked></ion-radio>
+              </ion-item>
+          
+              <ion-item>
+                <ion-label> Jamaica</ion-label>
+                <ion-radio slot="start" value=" Jamaica"></ion-radio>
+              </ion-item>
+          
+              <ion-item>
+                <ion-label>the USA</ion-label>
+                <ion-radio slot="start" value="the USA"></ion-radio>
+              </ion-item>
+    
+ 
+                <ion-button shape="round" color="secondary" (click)="next1()">next1</ion-button>
+            </ion-radio-group>
+
+            <ion-radio-group *ngIf="result3" [(ngModel)]="Q3">
+              <ion-list-header>
+                <ion-label> Which sport did Australia's Sir Donald Bradman play?</ion-label>
+              </ion-list-header>
+          
+              <ion-item>
+                <ion-label> cricket</ion-label>
+                <ion-radio slot="start" value="cricket" checked></ion-radio>
+              </ion-item>
+          
+              <ion-item>
+                <ion-label> golf</ion-label>
+                <ion-radio slot="start" value="golf"></ion-radio>
+              </ion-item>
+          
+              <ion-item>
+                <ion-label>basketball</ion-label>
+                <ion-radio slot="start" value="basketball"></ion-radio>
+              </ion-item>
+    
+              <ion-item>
+                  <ion-label> tennis</ion-label>
+                  <ion-radio slot="start" value=" tennis"></ion-radio>
+                </ion-item>
+                <ion-button shape="round" color="secondary" (click)="next2()">next2</ion-button>
+            </ion-radio-group>
+
+            <ion-radio-group *ngIf="result4" [(ngModel)]="Q4">
+              <ion-list-header>
+                <ion-label> In which sport can you get a birdie, a bogey or a hole-in-one?</ion-label>
+              </ion-list-header>
+          
+              <ion-item>
+                <ion-label> hockey</ion-label>
+                <ion-radio slot="start" value=" hockey" checked></ion-radio>
+              </ion-item>
+          
+              <ion-item>
+                <ion-label> tennis</ion-label>
+                <ion-radio slot="start" value="tennis"></ion-radio>
+              </ion-item>
+          
+              <ion-item>
+                <ion-label> basketball</ion-label>
+                <ion-radio slot="start" value=" basketball"></ion-radio>
+              </ion-item>
+    
+              <ion-item>
+                  <ion-label> golf</ion-label>
+                  <ion-radio slot="start" value=" golf"></ion-radio>
+                </ion-item>
+                <ion-button shape="round" color="secondary" (click)="next3()">next3</ion-button>
+            </ion-radio-group>
+
+            <ion-radio-group *ngIf="result5" [(ngModel)]="Q5">
+              <ion-list-header>
+                <ion-label> In baseball, a batter is out if the umpire calls</ion-label>
+              </ion-list-header>
+          
+              <ion-item>
+                <ion-label>one strike</ion-label>
+                <ion-radio slot="start" value="one strike" checked></ion-radio>
+              </ion-item>
+          
+              <ion-item>
+                <ion-label>two strikes</ion-label>
+                <ion-radio slot="start" value="two strikes"></ion-radio>
+              </ion-item>
+          
+              <ion-item>
+                <ion-label>three strikes</ion-label>
+                <ion-radio slot="start" value="three strikes"></ion-radio>
+              </ion-item>
+  
+                <ion-button shape="round" color="secondary" (click)="next4()">next4</ion-button>
+            </ion-radio-group>
+
+          
+           
+          </ion-list> 
+          <ion-button type="submit" value="submit" color="secondary" expand="block" (click)="submit()">submit </ion-button>
+          <!-- <ion-button type="pass" value="pass" color="secondary
+          " (click)="pass()" >Pass </ion-button> -->
+</ion-content>
